@@ -7,8 +7,14 @@ const ColorContext = createContext();
 
 // 2 create provider
 function UseContextProvider({children}) {
+  const [data, setData] = useState('red')
+
+  const changeData = () => {
+    setData(data)
+  }
+
   return (
-    <ColorContext.Provider value='white'>
+    <ColorContext.Provider value={{data, changeData}}>
       {children}
     </ColorContext.Provider>
   )

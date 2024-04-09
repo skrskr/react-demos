@@ -9,6 +9,7 @@ import { UseContextProvider } from './Components/UseContextProvider.jsx'
 import UseContextExample from './Components/UseContextExample.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // 4 wrap app with context provider
   <UseContextProvider>
       {/* <App /> */}
       {/* <UseStateExample /> */}

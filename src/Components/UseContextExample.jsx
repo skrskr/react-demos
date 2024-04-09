@@ -2,8 +2,11 @@ import { useContext } from 'react'
 import './../App.css'
 import { ColorContext } from './UseContextProvider'
 
+// 5 use context
 function UseContextExample() {
-  const data = useContext(ColorContext)
+  const {data, changeData} = useContext(ColorContext)
+
+  changeData('greeen')
 
   return (
     <>
