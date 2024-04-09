@@ -8,6 +8,7 @@ import UseRefExample from './Components/UseRefExample.jsx'
 import { UseContextProvider } from './Components/UseContextProvider.jsx'
 import UseContextExample from './Components/UseContextExample.jsx'
 import UseMemoExample from './Components/UseMemoExample.jsx'
+import UseReducerExample from './Components/UseReducerExample.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // 4 wrap app with context provider
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <UseEffectExample /> */}
       {/* <UseRefExample /> */}
       {/* <UseContextExample /> */}
-      <UseMemoExample />
+      {/* <UseMemoExample /> */}
+      <UseReducerExample />
   </UseContextProvider>
 )
