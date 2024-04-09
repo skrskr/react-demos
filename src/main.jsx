@@ -9,6 +9,7 @@ import { UseContextProvider } from './Components/UseContextProvider.jsx'
 import UseContextExample from './Components/UseContextExample.jsx'
 import UseMemoExample from './Components/UseMemoExample.jsx'
 import UseReducerExample from './Components/UseReducerExample.jsx'
+import UseCustomHookExample from './Components/UseCustomHookExample.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // 4 wrap app with context provider
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <UseRefExample /> */}
       {/* <UseContextExample /> */}
       {/* <UseMemoExample /> */}
-      <UseReducerExample />
+      {/* <UseReducerExample /> */}
+      <UseCustomHookExample />
   </UseContextProvider>
 )
