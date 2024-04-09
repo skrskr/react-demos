@@ -1,28 +1,16 @@
 import {useReducer, useState } from 'react'
 import './../App.css'
 
+import  ReducerTest  from '../Reducer/ReducerTest'
+
 const intialValue = {
   counter: 0
-}
-
-const reducer = (state, action) => {
-
-  switch (action.type) {
-    case 'increment':
-      return {counter: state.counter + 1}
-    case 'decrement':
-      return {counter: state.counter - 1}
-    case 'reset':
-      return {counter: 0}
-    default:
-      return state
-  }
 }
 
 
 function UseReducerExample() {
   // const [counter, setCounter] = useState(0)
-  const [state, dispatch] = useReducer(reducer,intialValue)
+  const [state, dispatch] = useReducer(ReducerTest,intialValue)
 
   return (
     <>
