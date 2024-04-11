@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import './../App.css'
+import BackToHome from './BackToHome';
 
 function UseMemoExample() {
   const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
@@ -22,6 +23,8 @@ function UseMemoExample() {
         <button onClick={() => setCounter(counter + 1)}>+</button>
         <button onClick={() => setTest(test + 1)}>test</button>
       </div>
+
+      <BackToHome />
     </>
   )
 }

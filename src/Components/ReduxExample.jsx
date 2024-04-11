@@ -1,6 +1,7 @@
 import {useSelector, useDispatch} from 'react-redux'
 import './../App.css'
 import { decrementCounterAction, incrementCounterAction, resetCounterAction } from '../actions/counterAction';
+import BackToHome from './BackToHome';
 
 function ReduxExample() {
   // 4 Access data from store
@@ -17,6 +18,8 @@ function ReduxExample() {
         <button onClick={() => dispatchCounter(decrementCounterAction())}>Decrement</button>
         <button onClick={() => dispatchCounter(resetCounterAction())}>Reset</button>
       </div>
+
+      <BackToHome />
     </>
   )
 }

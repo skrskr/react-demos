@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import './../App.css'
+import BackToHome from './BackToHome'
 
 function UseRefExample() {
   const buttonRef = useRef(null)
@@ -18,6 +19,8 @@ function UseRefExample() {
           count
         </button>
       </div>
+
+      <BackToHome />
     </>
   )
 }

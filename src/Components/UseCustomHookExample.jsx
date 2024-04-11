@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
 import './../App.css'
 import useFetchData from '../hooks/FetchData'
+import BackToHome from './BackToHome'
 
 function UseCustomHookExample() {
 
@@ -12,6 +12,7 @@ function UseCustomHookExample() {
       <div className='card'>
         {data.map((item) => <p key={item.id}>{item.title}</p>)}
       </div>
+      <BackToHome />
     </>
   )
 }

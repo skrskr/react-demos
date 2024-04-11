@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './../App.css'
+import BackToHome from './BackToHome'
 
 function UseStateExample() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function UseStateExample() {
       <label htmlFor="input">{value}</label>
         <input type="text"  value={value} onChange={(e) => setValue(e.target.value)}/>
       </div>
+      <BackToHome />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import './../App.css'
 import { ColorContext } from './UseContextProvider'
+import BackToHome from './BackToHome'
 
 // 5 use context
 function UseContextExample() {
@@ -14,6 +15,8 @@ function UseContextExample() {
       <div className='card'>
        {data}
       </div>
+
+      <BackToHome />
     </>
   )
 }

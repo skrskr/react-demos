@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './../App.css'
+import BackToHome from './BackToHome'
 
 function UseEffectExample() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function UseEffectExample() {
       <div className="card">
        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
        </div>
+       <BackToHome />
     </>
   )
 }

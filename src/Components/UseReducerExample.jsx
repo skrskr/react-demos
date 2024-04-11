@@ -2,6 +2,7 @@ import { useReducer } from 'react'
 import './../App.css'
 
 import TestReducer from '../reducers/testReducer'
+import BackToHome from './BackToHome'
 
 const intialValue = {
   counter: 0
@@ -21,6 +22,8 @@ function UseReducerExample() {
         <button onClick={() => dispatch({ 'type': 'increment' })}>+</button>
         <button onClick={() => dispatch({ 'type': 'reset' })}>reset</button>
       </div>
+
+      <BackToHome />
     </>
   )
 }
