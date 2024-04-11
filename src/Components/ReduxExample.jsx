@@ -1,5 +1,6 @@
 import {useSelector, useDispatch} from 'react-redux'
 import './../App.css'
+import { decrementCounterAction, incrementCounterAction, resetCounterAction } from '../actions/counterAction';
 
 function ReduxExample() {
   // 4 Access data from store
@@ -12,9 +13,9 @@ function ReduxExample() {
       <h1>Redux Example</h1>
       <div className='card'>
         <h3>Counter: {data}</h3>
-        <button onClick={() => dispatchCounter({type: 'increment'})}>Increment</button>
-        <button onClick={() => dispatchCounter({type: 'decrement'})}>Decrement</button>
-        <button onClick={() => dispatchCounter({type: 'reset'})}>Reset</button>
+        <button onClick={() => dispatchCounter(incrementCounterAction())}>Increment</button>
+        <button onClick={() => dispatchCounter(decrementCounterAction())}>Decrement</button>
+        <button onClick={() => dispatchCounter(resetCounterAction())}>Reset</button>
       </div>
     </>
   )
