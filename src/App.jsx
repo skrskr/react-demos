@@ -14,6 +14,7 @@ function App() {
         <Link to="/use-memo">Use memo Example</Link><br />
         <Link to="/use-reducer">Use Reducer Example</Link><br />
         <Link to="/use-custom-hook">Use Custom Hook Example</Link><br />
+        <Link to="/redux">Redux</Link><br />
       </div>
       
     </>
