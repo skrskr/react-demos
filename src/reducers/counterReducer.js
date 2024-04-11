@@ -2,7 +2,7 @@ import { DECREMENT, INCREMENT, RESET } from "../types/counterType"
 
 
 // 1 create reducer function
-const ReducerCounter = (state = {counter: 0}, action) => {
+const CounterReducer = (state = {counter: 0}, action) => {
 
     switch (action.type) {
       case INCREMENT:
@@ -16,4 +16,4 @@ const ReducerCounter = (state = {counter: 0}, action) => {
     }
   }
 
-  export default ReducerCounter;
+  export default CounterReducer;

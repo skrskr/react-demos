@@ -1,4 +1,4 @@
-const ReducerTest = (state, action) => {
+const TestReducer = (state, action) => {
 
     switch (action.type) {
       case 'increment':
@@ -12,4 +12,4 @@ const ReducerTest = (state, action) => {
     }
   }
 
-  export default ReducerTest;
+  export default TestReducer;
