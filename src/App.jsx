@@ -16,6 +16,8 @@ function App() {
         <Link to="/use-custom-hook">Use Custom Hook Example</Link><br />
         <Link to="/redux">Redux</Link><br />
         <Link to="/protected-route">Protected Example 1</Link><br />
+        <Link to="/private-route1">Private route Example 1</Link><br />
+        <Link to="/private-route2">Private route Example 2</Link><br />
       </div>
       
     </>
