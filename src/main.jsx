@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import UseStateExample from './Components/UseStateExample.jsx'
@@ -14,6 +14,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ReduxExample from './Components/ReduxExample.jsx'
 import { Provider } from 'react-redux'
 import storeCounter from './stores/store.js'
+import ProtectedRoute from './Components/ProtectedRoute.jsx'
+import ProtectedRouteExample1 from './Components/ProtectedRouteExample1.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   < BrowserRouter >
@@ -28,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/use-reducer' element={<UseReducerExample />} />
         <Route path='/use-custom-hook' element={<UseCustomHookExample />} />
         <Route path='/redux' element={<ReduxExample />} />
+        <Route path='/protected-route' element={<ProtectedRoute element={<ProtectedRouteExample1 />} isLoggedIn={false} />} />
       </Routes>
     </Provider >
   </BrowserRouter >
